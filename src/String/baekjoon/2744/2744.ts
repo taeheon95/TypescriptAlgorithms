@@ -1,6 +1,6 @@
-import * as fs from 'fs';
+// import * as fs from 'fs';
 
-const input_enter: string[] = fs.readFileSync(0, 'utf8').toString().split(' ');
+// const input_enter: string[] = fs.readFileSync(0, 'utf8').toString().split(' ');
 
 function solution(str: string) {
   let rStr = '';
@@ -15,6 +15,6 @@ function solution(str: string) {
   return rStr;
 }
 
-console.log(solution(input_enter[0]));
+// console.log(solution(input_enter[0]));
 
 export default solution;

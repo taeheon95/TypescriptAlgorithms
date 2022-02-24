@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+// import * as fs from 'fs';
 
 // const input_enter: string[] = fs.readFileSync(0, 'utf8').toString().split('\n');
 
