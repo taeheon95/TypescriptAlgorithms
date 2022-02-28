@@ -1,20 +1,20 @@
-class Stack {
-  top: number;
-  stack: number[];
+class Stack<T> {
+  private top: number;
+  private stack: T[];
 
   constructor() {
     this.top = 0;
     this.stack = [];
   }
 
-  push(value: number) {
+  push(value: T) {
     this.stack[this.top] = value;
     this.top++;
   }
 
-  pop() {
+  pop(): T {
     if (this.top === 0) {
-      return 'Stack is Empty';
+      throw new Error('Stack is Empty');
     }
 
     this.top--;
@@ -27,11 +27,11 @@ class Stack {
     return this.top;
   }
 
-  peek() {
+  peek(): T {
     return this.stack[this.top - 1];
   }
 
-  view(output: Function = (value: number) => console.log(value)) {
+  view(output: Function = (value: T) => console.log(value)) {
     for (let i = 0; i < this.top; i++) {
       output(this.stack[i]);
     }
