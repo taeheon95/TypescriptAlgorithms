@@ -1,5 +1,4 @@
 import age_diff from './age_diff';
-import fs from 'fs';
 import { readInput, readOutput } from '../utils';
 
 describe('나이 차이', () => {
@@ -8,8 +7,8 @@ describe('나이 차이', () => {
   let count: number = 1;
 
   beforeEach(() => {
-    input = readInput(__dirname, `/in${count}.txt`).trim();
-    output = readOutput(__dirname, `/out${count}.txt`).trim();
+    input = readInput(__dirname, `in${count}.txt`);
+    output = readOutput(__dirname, `out${count}.txt`);
     console.log(count);
   });
 

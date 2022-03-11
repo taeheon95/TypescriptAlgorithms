@@ -7,8 +7,8 @@ describe('자연수의 합', () => {
   let count: number = 1;
 
   beforeEach(() => {
-    input = readInput(__dirname, `/in${count}.txt`);
-    output = readOutput(__dirname, `/out${count}.txt`);
+    input = readInput(__dirname, `in${count}.txt`);
+    output = readOutput(__dirname, `out${count}.txt`);
     console.log(count);
   });
 

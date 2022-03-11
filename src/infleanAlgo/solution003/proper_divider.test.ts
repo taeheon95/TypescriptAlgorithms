@@ -2,15 +2,15 @@ import proper_divider from './proper_divider';
 import { readInput, readOutput } from '../utils';
 
 describe('진약수의 합', () => {
-  let input:string;
-  let output:string;
-  let count:number = 1;
+  let input: string;
+  let output: string;
+  let count: number = 1;
 
-  beforeEach(()=>{
-    input = readInput(__dirname, `/in${count}.txt`).trim();
-    output = readOutput(__dirname, `/out${count}.txt`).trim();
+  beforeEach(() => {
+    input = readInput(__dirname, `in${count}.txt`);
+    output = readOutput(__dirname, `out${count}.txt`);
     console.log(count);
-  })
+  });
 
   it('test case 1', () => {
     expect(proper_divider(Number(input))).toBe(output);

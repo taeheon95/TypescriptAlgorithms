@@ -1,5 +1,5 @@
 import { readInput, readOutput } from '../utils';
-import get_nums from './get_nums'
+import get_nums from './get_nums';
 
 describe('숫자만 추출', function() {
   let input: string;
@@ -7,29 +7,29 @@ describe('숫자만 추출', function() {
   let count: number = 1;
 
   beforeEach(() => {
-    input = readInput(__dirname, `/in${count}.txt`).trim();
-    output = readOutput(__dirname, `/out${count}.txt`).trim();
+    input = readInput(__dirname, `in${count}.txt`);
+    output = readOutput(__dirname, `out${count}.txt`);
     console.log(count);
   });
 
-  it("#1", ()=>{
+  it('#1', () => {
     expect(get_nums(input)).toBe(output);
     count++;
-  })
-  it("#2", ()=>{
+  });
+  it('#2', () => {
     expect(get_nums(input)).toBe(output);
     count++;
-  })
-  it("#3", ()=>{
+  });
+  it('#3', () => {
     expect(get_nums(input)).toBe(output);
     count++;
-  })
-  it("#4", ()=>{
+  });
+  it('#4', () => {
     expect(get_nums(input)).toBe(output);
     count++;
-  })
-  it("#5", ()=>{
+  });
+  it('#5', () => {
     expect(get_nums(input)).toBe(output);
     count++;
-  })
+  });
 });

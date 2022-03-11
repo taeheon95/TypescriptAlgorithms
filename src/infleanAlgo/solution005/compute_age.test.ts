@@ -7,29 +7,29 @@ describe('나이계산', function() {
   let count: number = 1;
 
   beforeEach(() => {
-    input = readInput(__dirname, `/in${count}.txt`).trim();
-    output = readOutput(__dirname, `/out${count}.txt`).trim();
+    input = readInput(__dirname, `in${count}.txt`);
+    output = readOutput(__dirname, `out${count}.txt`);
     console.log(count);
   });
 
-  it("#1", ()=>{
+  it('#1', () => {
     expect(compute_age(input)).toBe(output);
     count++;
-  })
-  it("#2", ()=>{
+  });
+  it('#2', () => {
     expect(compute_age(input)).toBe(output);
     count++;
-  })
-  it("#3", ()=>{
+  });
+  it('#3', () => {
     expect(compute_age(input)).toBe(output);
     count++;
-  })
-  it("#4", ()=>{
+  });
+  it('#4', () => {
     expect(compute_age(input)).toBe(output);
     count++;
-  })
-  it("#5", ()=>{
+  });
+  it('#5', () => {
     expect(compute_age(input)).toBe(output);
     count++;
-  })
+  });
 });
