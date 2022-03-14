@@ -1,12 +1,13 @@
 function countOfZero(N: number): number {
-  let ans: number = 0;
-  const dp: number[][] = Array(N + 1).fill(Array(2).fill(0));
+  const dp: number[][] = Array.from({ length: N + 1 }, () => {
+    return Array.from({ length: 2 }, () => 0);
+  });
 
   for (let i = 1; i <= N; i++) {
     let temp = i;
     let countTwo = 0;
     let countFive = 0;
-    while (temp % 2 === 0 || temp % 5 === 0) {
+    while (temp % 2 === 0 || temp % 5 === 0 && temp !== 0) {
       if (temp % 2 === 0) {
         countTwo++;
         temp = Math.floor(temp / 2);
