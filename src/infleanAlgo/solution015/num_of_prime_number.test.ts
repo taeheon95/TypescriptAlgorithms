@@ -10,7 +10,6 @@ describe('소수의 개수', function() {
   beforeEach(() => {
     input = readInput(__dirname, `in${count}.txt`);
     output = readOutput(__dirname, `out${count}.txt`);
-    console.log(count);
   });
 
   it('#1', () => {
