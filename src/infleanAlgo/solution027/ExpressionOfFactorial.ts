@@ -1,7 +1,3 @@
-interface FactoType {
-  [key: number]: number;
-}
-
 function expressionOfFactorial(N: number): number[] {
   const check = Array.from({ length: N + 1 }, () => 0);
   for (let i = 2; i <= N; i++) {
