@@ -2,10 +2,6 @@ import solution from './SavePrincess';
 import { readInput, readOutput } from '../utils';
 
 describe('공주 구하기', function() {
-  let count = 0;
-  afterEach(() => {
-    count++;
-  });
   it('test case', () => {
     const ans = solution(8, 3);
     expect(ans).toBe(7);
